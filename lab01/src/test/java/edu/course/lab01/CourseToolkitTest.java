@@ -7,17 +7,26 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class CourseToolkitTest {
 
+    @ Test  
+
+        void returnsTrueForEvenNumber() {
+            boolean result = CourseToolkit.isEven(8);
+
+            assertTrue(result);
+        }
+
+        @Test
+        void returnsFalseForOddNumber() {
+            boolean result = CourseToolkit.isEven(7);
+
+            assertFalse(result);
+        }
+    }
+
     @Test
-    void returnsTrueForEvenNumber() {
-        boolean result = CourseToolkit.isEven(8);
+    void returnsTrueForNumber() {
+        boolean result = CourseToolkit.isEven(0);
 
         assertTrue(result);
-    }
 
-    @Test
-    void returnsFalseForOddNumber() {
-        boolean result = CourseToolkit.isEven(7);
-
-        assertFalse(result);
     }
-}
