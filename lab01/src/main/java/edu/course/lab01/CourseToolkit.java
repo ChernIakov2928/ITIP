@@ -25,7 +25,6 @@ public final class CourseToolkit {
         return true;
     }
 
-    // Твоя логика проверки на палиндром
     public static boolean isPalindrome(String text) {
         if (text == null) {
             throw new IllegalArgumentException("Text cannot be null");
